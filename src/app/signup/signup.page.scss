@@ -1,0 +1,96 @@
+
+.log_wrapper{
+    width: 100%;
+    height: auto;
+    background-image: url(../../assets/images/log_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-bottom: 3rem;
+   .main_area{
+    width: 100%;
+    padding-top: 25rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    
+    .heading{
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.4rem;
+            text-align: left;
+        }
+    }
+
+    .form_area{
+        width: 100%;
+        margin-top: 2rem;
+        ion-item{
+            margin-bottom: 2rem;
+        }
+        .item-label-floating{
+            --background: $globalColor;
+            --padding-start: 0;
+            ion-icon{
+                position: absolute;
+                bottom: 8px;
+                right: 0;
+            }
+            ion-label{
+                --color: $globalColor;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.4rem;
+            }
+            &.item-has-focus{
+                --highlight-background: #81bd3f;
+                ion-label{
+                    color: #81bd3f;
+                }
+            }
+        }
+        .ion-color-custom{
+            margin-top: 3rem;
+            width: calc(100%);
+            height: 6rem;
+            background: linear-gradient(to right, #15753b 0%, #81bd3f);
+            --box-shadow: none;
+            border-radius: 5rem;
+            font-size: 1.5rem;
+            text-transform: capitalize;
+        }
+        .terms{
+            width: 100%;
+            text-align: left;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: flex-start;
+            span{
+                color: #81bd3f;
+               
+            }
+            .checkbox{
+                margin: 3px 10px 0 0;
+                width: 20px;
+                height: 20px;
+                &.checkbox-checked{
+                    --background-checked: linear-gradient(to right, #15753b 0%, #81bd3f);
+                    --border-color-checked: #15753b;
+                }
+                
+            }
+        }
+    }
+    p{
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.4rem;
+        span{
+            color: #81bd3f;
+           
+        }
+    }
+
+   }
+
+}

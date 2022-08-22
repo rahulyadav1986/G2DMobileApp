@@ -24,3 +24,67 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@font-face{
+    font-family: 'Streamster'; src: url(./assets/fonts/Streamster.ttf), url(./assets/fonts/Streamster.otf);
+}
+$globalColor: #f6f5fa;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem; color: #929292; line-height: 2.3rem; background-color: $globalColor; font-weight: 300;
+}
+.stylish_heading{
+    font-family: 'Streamster'; 
+}
+.back_wrapper{
+    display: flex;
+    align-items: center;
+
+    .back{    
+        background: linear-gradient(to right, #15753b 0%, #81bd3f);
+        border-radius: 100%;
+        color: #fff;
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        ion-icon{
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    
+    }
+
+}
+
+.sc-ion-searchbar-ios-h{
+    box-shadow: none;
+    padding: 0 !important;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 4rem;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.sc-ion-searchbar-md-h{
+    --box-shadow: none;
+    padding: 0 !important;
+    background-color: #fff;
+    --border-radius: 8px;
+    height: 4rem;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+
+}

@@ -1,0 +1,31 @@
+<ng-container
+*ngIf="router.url === '/login' ||
+router.url === '/signup' || 
+router.url === '/welcome'; then blankfooter else mainfooter"
+></ng-container>
+
+<ng-template #mainfooter>
+  
+  <footer>
+    <ul>
+      <li [routerLink]="['/home']" [routerLinkActive]="['active']">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-icon name="arrow-up-outline" class="arrow"></ion-icon>
+      </li>
+      <li [routerLink]="['/about']" [routerLinkActive]="['active']">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-icon name="arrow-up-outline" class="arrow"></ion-icon>
+      </li>
+      <li [routerLink]="['/cart']" [routerLinkActive]="['active']">
+        <ion-icon name="cart-outline"></ion-icon>
+        <ion-icon name="arrow-up-outline" class="arrow"></ion-icon>
+      </li>
+      <li [routerLink]="['/menu']" [routerLinkActive]="['active']">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="arrow-up-outline" class="arrow"></ion-icon>
+      </li>
+    </ul>
+  </footer>
+  
+</ng-template>
+<ng-template #blankfooter></ng-template>
